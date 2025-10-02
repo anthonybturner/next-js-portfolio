@@ -36,11 +36,11 @@ export default function About() {
         developer.
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies and dancing. I also enjoy{" "}
+        <span className="italic">When I&apos;m not coding</span>, I enjoy
+        playing video games, watching movies and dancing. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about <span className="font-medium">religion and history</span>
-        . I'm also learning how to play the piano.
+        . I&apos;m also learning how to play the piano.
       </p>
     </motion.section>
   );
