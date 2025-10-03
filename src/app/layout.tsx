@@ -1,22 +1,22 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/header";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/header'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Anthony | Personal Portfolio",
-  description: "Anthony is a full-stack developer with 10 years of experience",
-};
+  title: 'Anthony | Personal Portfolio',
+  description: 'Anthony is a full-stack developer with 10 years of experience',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className}
       bg-gray-50 text-gray-950 relative h-[5000px] pt-28
@@ -28,5 +28,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }

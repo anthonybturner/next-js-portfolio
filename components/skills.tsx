@@ -1,19 +1,10 @@
-'use client'
-
 import React from 'react'
 import SectionHeading from './section-heading'
-import { motion } from 'framer-motion'
 
-export default function About() {
+export default function Skills() {
   return (
-    <motion.section
-      id="about"
-      className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28 sm:mb-20"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
-    >
-      <SectionHeading>About Me</SectionHeading>
+    <section id="skills" className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28 sm:mb-20">
+      <SectionHeading>Skills</SectionHeading>
       <p className="mb-3">
         {' '}
         After recieving my GED, A+ Certification and Microsoft Office Specialist from BOCES Trade School, I decided to
@@ -32,6 +23,6 @@ export default function About() {
         dancing. I also enjoy <span className="font-medium">learning new things</span>. I am currently learning about{' '}
         <span className="font-medium">religion and history</span>. I&apos;m also learning how to play the piano.
       </p>
-    </motion.section>
+    </section>
   )
 }

@@ -5,7 +5,7 @@ import { projectsData } from '@/lib/data'
 
 export default function Projects() {
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-20">
+    <section id="projects" className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {/* prettier-ignore */}

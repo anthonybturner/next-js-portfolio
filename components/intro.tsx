@@ -1,22 +1,22 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
+import { FaGithubSquare } from 'react-icons/fa'
+import { HiDownload } from 'react-icons/hi'
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
-      <div className="flex items-center justify-center">
+    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
+      <div className="flex items-center justify-center scroll-mt-[100rem] ">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.2 }}
+            transition={{ type: 'tween', duration: 0.2 }}
           >
             <Image
               src="https://media.licdn.com/dms/image/v2/D4E03AQFDLV4eL39Hqw/profile-displayphoto-shrink_800_800/B4EZNuZHioHEAg-/0/1732723898932?e=1762387200&v=beta&t=_kpM4TUR_IF_r1qoJ4w8hEHRwTdHILJ2Yb94FljKNow"
@@ -33,7 +33,7 @@ export default function Intro() {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 125,
               delay: 0.1,
               duration: 0.7,
@@ -48,14 +48,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">10 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="italic">
-          React (Next.js), Angular, .NET Core, .NET Framework, Legacy ASP.NET
-          applications
-        </span>
+        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m a{' '}
+        <span className="font-bold">full-stack developer</span> with <span className="font-bold">10 years</span> of
+        experience. I enjoy building <span className="italic">sites & apps</span>. My focus is{' '}
+        <span className="italic">React (Next.js), Angular, .NET Core, .NET Framework, Legacy ASP.NET applications</span>
         .
       </motion.h1>
       <motion.div
@@ -68,16 +64,14 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here{" "}
-          <BsArrowRight className="opactity-70  group-hover:translate-x-1 transition" />
+          Contact me here <BsArrowRight className="opactity-70  group-hover:translate-x-1 transition" />
         </Link>
         <a
           className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
           href="/CV.docx"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition "></HiDownload>
+          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition "></HiDownload>
         </a>
 
         <a
@@ -96,5 +90,5 @@ export default function Intro() {
         </a>
       </motion.div>
     </section>
-  );
+  )
 }
