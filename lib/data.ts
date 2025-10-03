@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import corpcommentImg from "@/public/navy-project-main.jpg";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -62,24 +62,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Constellation Software Engineering (US Navy)",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I served as a contractor full-stack cloud software engineer at Constellation Software Engineering, delivering mission-critical solutions for the US Navy over an 8-month engagement.",
+    tags: ["C#", ".NET Core", "Python", "Django", "Azure SQL", "Tailwind"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "AppTech",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Modernized Angular applications to Angular 19, created features, fixed bugs, and unit tested Angular/TypeScript applications. Maintained .NET Framework apps, built scalable APIs with ASP.NET Core, and implemented CI/CD pipelines in Azure DevOps.",
+    tags: ["Angular", ".NET 8", "ASP.NET Core", "TypeScript", "RxJS", "Azure DevOps"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "InfoEd Global",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Built full-stack solutions using C#, VB.NET, ASP.NET, Angular, and JavaScript. Implemented XML/XSD integrations with ASP.NET Web Forms and optimized SQL Server/Oracle databases.",
+    tags: ["C#", "VB.NET", "ASP.NET", "Angular", "JavaScript", "SQL Server", "Oracle"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -103,5 +103,8 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Django",
+  "C#",
+  ".NET Core",
+  "Azure SQL",
   "Framer Motion",
 ] as const;

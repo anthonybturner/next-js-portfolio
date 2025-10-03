@@ -52,7 +52,7 @@ export default function Intro() {
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">10 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">
+        <span className="italic">
           React (Next.js), Angular, .NET Core, .NET Framework, Legacy ASP.NET
           applications
         </span>
