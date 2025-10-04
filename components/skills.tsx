@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import SectionHeading from './section-heading'
 import { useActiveSectionContext } from '@/context/active-section-context'
 import { useInView } from 'react-intersection-observer'
+import { skillsData } from '@/lib/data'
 
 export default function Skills() {
   const { setActiveSection } = useActiveSectionContext()
@@ -16,26 +17,15 @@ export default function Skills() {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id="skills" className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28 sm:mb-20">
+    <section ref={ref} id="skills" className="mb-28 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-40">
       <SectionHeading>Skills</SectionHeading>
-      <p className="mb-3">
-        {' '}
-        After recieving my GED, A+ Certification and Microsoft Office Specialist from BOCES Trade School, I decided to
-        pursue my passion for programming. I enrolled in college at Ulster County Community College and then after, the
-        State University of New Paltz. After graduating with <span className="italic">two</span> degrees in{' '}
-        <span className="font-medium">Computer Science</span>, I decided to pursue my passion for programming and began
-        my career as a <span className="font-medium">full-stack web developer</span>.{' '}
-        <span className="italic">My favorite part of programming</span> is the problem-solving aspect. I{' '}
-        <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. My core
-        stack is <span className="font-medium">.NET, Angular, React, Next.js, Node.js, PostGresSql and Sql Server</span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to learn new technologies. I am currently
-        looking for a <span className="font-medium">full-time position</span> as a software developer.
-      </p>
-      <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing video games, watching movies and
-        dancing. I also enjoy <span className="font-medium">learning new things</span>. I am currently learning about{' '}
-        <span className="font-medium">religion and history</span>. I&apos;m also learning how to play the piano.
-      </p>
+      <ul className="flex flex-wrap gap-2 text-lg text-gray-800">
+        {skillsData.map((skill, index) => (
+          <li className="bg-white border border-black/[0.1] rounded-xl px-5 py-3" key={index}>
+            {skill}
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }
