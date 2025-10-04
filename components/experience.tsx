@@ -4,7 +4,10 @@ import React, { useEffect } from 'react'
 import SectionHeading from './section-heading'
 import { useActiveSectionContext } from '@/context/active-section-context'
 import { useInView } from 'react-intersection-observer'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '@/lib/data'
+import { ImInsertTemplate } from 'react-icons/im'
 
 export default function Experience() {
   const { setActiveSection } = useActiveSectionContext()
@@ -19,16 +22,34 @@ export default function Experience() {
   return (
     <section ref={ref} id="experience" className="mb-28 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-40">
       <SectionHeading>Experience</SectionHeading>
-      <ul className="flex flex-wrap gap-2 text-lg text-gray-800">
+      <VerticalTimeline>
         {experiencesData.map((exp, index) => (
-          <li className="bg-white border border-black/[0.1] rounded-xl px-5 py-3" key={index}>
-            <h2>{exp.title}</h2>
-            <p>{exp.description}</p>
-            {exp.location}
-            {exp.date}
-          </li>
+          <React.Fragment key={index}>
+            <VerticalTimelineElement
+              contentStyle={{
+                background: '#f3f4f6',
+                boxShadow: 'none',
+                border: '1px solid rgba(0,0,0, 0.05)',
+                textAlign: 'left',
+                padding: '1.3rem 2rem',
+              }}
+              contentArrowStyle={{
+                borderRight: '0.4rem solid #9ca3af',
+              }}
+              date={exp.date}
+              icon={exp.icon}
+              iconStyle={{
+                background: 'white',
+                fontSize: '1.rem',
+              }}
+            >
+              <h3 className="font-semibold capitalize">{exp.title}</h3>
+              <p className="font-normal !mt-0">{exp.location}</p>
+              <p className="!mt-1 !font-normal text-gray-700">{exp.description}</p>
+            </VerticalTimelineElement>
+          </React.Fragment>
         ))}
-      </ul>
+      </VerticalTimeline>
     </section>
   )
 }
