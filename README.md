@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://anthonybturner-next.vercel.app) _(Update with your actual URL)_
+[View Live Portfolio](https://anthonybturner-next.vercel.app)
 
 ## ✨ Features
 
@@ -181,8 +181,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Anthony Turner**
 
 - Email: anthonybturner@icloud.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- GitHub: [Your GitHub](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/anthony-turner-0207b76b/)
+- GitHub: [Your GitHub](https://github.com/anthonybturner)
 
 ## 🙏 Acknowledgments
 
