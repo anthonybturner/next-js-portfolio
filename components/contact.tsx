@@ -28,15 +28,34 @@ export default function Contact() {
       </p>
       <form className="mt-10 flex flex-col p-1">
         <input
-          className="h-14 rounded-lg borderBlack  border-1 border-gray-200 p-2 bg-gray-50"
+          className="
+            h-14 rounded-lg
+            p-2
+            bg-gray-50 border border-gray-200
+            borderBlack
+          "
           type="email"
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack border-1 border-gray-200 p-2 bg-gray-50"
+          className="
+            h-52 my-3 rounded-lg
+            p-2
+            bg-gray-50 border border-gray-200
+            borderBlack
+          "
           placeholder="Your Message"
         />
-        <button className="relative flex gap-2 borderBlack border-1 border-gray-200 p-2 self-start w-fit" type="submit">
+        <button
+          className="
+            relative flex gap-2
+            w-fit p-2
+            border border-gray-200
+            borderBlack
+            self-start
+          "
+          type="submit"
+        >
           Submit <FaPaperPlane className="absolute top-0 right-0" />
         </button>
       </form>
