@@ -36,10 +36,7 @@ export default function Contact() {
           className="h-52 my-3 rounded-lg borderBlack border-1 border-gray-200 p-2 bg-gray-50"
           placeholder="Your Message"
         />
-        <button
-          className="relative flex gap-2 borderBlack border-1 border-gray-200 p-2 w-full self-start sm:w-fit "
-          type="submit"
-        >
+        <button className="relative flex gap-2 borderBlack border-1 border-gray-200 p-2 self-start w-fit" type="submit">
           Submit <FaPaperPlane className="absolute top-0 right-0" />
         </button>
       </form>
