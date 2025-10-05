@@ -21,7 +21,7 @@ export default function Skills() {
       <SectionHeading>Skills</SectionHeading>
       <ul className="flex flex-wrap gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
-          <li className="bg-white border border-black/[0.1] rounded-xl px-5 py-3" key={index}>
+          <li className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 hover:bg-amber-600" key={index}>
             {skill}
           </li>
         ))}

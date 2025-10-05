@@ -8,6 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '@/lib/data'
 import { ImInsertTemplate } from 'react-icons/im'
+import Image from 'next/image'
 
 export default function Experience() {
   const { setActiveSection } = useActiveSectionContext()
