@@ -40,7 +40,7 @@ export const experiencesData = [
     description:
       "I achieved graduation for my GED diploma, Microsoft Office Specialist (MOS), A+ Technician, after 1 year of studying. I immediately enrolled into UCCC for my Bachelors.",
     icon: React.createElement(LuGraduationCap),
-    date: "2014",
+    date: "2011",
   },
   {
     title: "Graduated UCCC - Ulster County Community College",
@@ -145,6 +145,7 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "TypeScript Generics", // ✅ Added TypeScript Generics
   "React",
   "Next.js",
   "Node.js",
@@ -159,8 +160,13 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Django",
-  "C#",
-  ".NET Core",
-  "Azure SQL",
   "Framer Motion",
+  "C#",
+  "C# Generics", // ✅ Added C# Generics
+  ".NET 8",
+  "ASP.NET Core",
+  "RxJS",
+  "Azure DevOps",
+  "Angular",
+  "Azure SQL",
 ] as const;

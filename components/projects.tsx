@@ -18,7 +18,7 @@ export default function Projects() {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id="projects" className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28">
+    <section ref={ref} id="projects" className="mb-10 max-w-[45rem] text-center leading-8 scroll-mt-28 sm:mb-20">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {/* prettier-ignore */}

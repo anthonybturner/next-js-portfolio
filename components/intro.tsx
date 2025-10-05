@@ -20,7 +20,7 @@ export default function Intro() {
     }
   }, [inView, setActiveSection])
   return (
-    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-100">
+    <section ref={ref} id="home" className="mb-10 max-w-[50rem] text-center sm:mb-20 scroll-mt-100">
       <div className="flex items-center justify-center ">
         <div className="relative">
           <motion.div

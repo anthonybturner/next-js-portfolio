@@ -20,7 +20,7 @@ export default function Experience() {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id="experience" className="mb-28 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-40">
+    <section ref={ref} id="experience" className="mb-10 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-20">
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline>
         {experiencesData.map((exp, index) => (
