@@ -43,7 +43,7 @@ export const experiencesData = [
     title: "Graduated BOCES Trade School",
     location: "Port Ewen, NY",
     description:
-      "I achieved graduation for my GED diploma, Microsoft Office Specialist (MOS), A+ Technician, after 1 year of studying. I immediately enrolled into UCCC for my Bachelors.",
+      "I achieved graduation for my GED diploma, Microsoft Office Specialist (MOS), A+ Technician, after 1 year of studying. I immediately enrolled into UCCC for my Associates.",
     icon: React.createElement(LuGraduationCap),
     image: undefined,
     date: "2011",
