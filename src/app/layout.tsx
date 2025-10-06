@@ -7,8 +7,41 @@ import ActiveSectionContextProvider from '@/context/active-section-context'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Anthony | Personal Portfolio',
-  description: 'Anthony is a full-stack developer with 10 years of experience',
+  title: 'Anthony Turner | Full-Stack Developer Portfolio',
+  description:
+    'Anthony is a full-stack developer with 10+ years of experience in React, Next.js, Angular, .NET, and cloud technologies. View my projects and experience.',
+  keywords: ['Anthony Turner', 'Full-Stack Developer', 'React', 'Next.js', 'TypeScript', 'Portfolio'],
+  authors: [{ name: 'Anthony Turner' }],
+  creator: 'Anthony Turner',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://anthonybturner-next.vercel.app',
+    title: 'Anthony Turner | Full-Stack Developer Portfolio',
+    description:
+      'Full-stack developer with 10+ years of experience. Specializing in React, Next.js, Angular, .NET, and cloud technologies.',
+    siteName: 'Anthony Turner Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg', // ✅ Simplified path
+        width: 1200,
+        height: 630,
+        alt: 'Anthony Turner - Full-Stack Developer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anthony Turner | Full-Stack Developer Portfolio',
+    description: 'Full-stack developer with 10+ years of experience in modern web technologies.',
+    images: ['/og-image.jpg'], // ✅ Simplified path
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
