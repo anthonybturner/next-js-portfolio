@@ -1,26 +1,19 @@
 'use client'
 
 import { useActiveSectionContext } from '@/context/active-section-context'
+import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
-import { useInView } from 'react-intersection-observer'
 
 export default function Intro() {
-  const { setActiveSection } = useActiveSectionContext()
-  const { ref, inView } = useInView({ threshold: 0.5 })
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection('Home')
-    }
-  }, [inView, setActiveSection])
+  const { ref } = useSectionInView('Home')
   return (
-    <section ref={ref} id="home" className="mb-10 max-w-[50rem] text-center sm:mb-20 scroll-mt-100">
+    <section ref={ref} id="home" className="mb-10 max-w-[50rem] text-center sm:mb-20 scroll-mt-28">
       <div className="flex items-center justify-center ">
         <div className="relative">
           <motion.div
@@ -58,11 +51,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m a{' '}
+        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m an experienced{' '}
         <span className="font-bold">full-stack developer</span> with <span className="font-bold">10 years</span> of
-        experience. I enjoy building <span className="italic">sites & apps</span>. My focus is{' '}
-        <span className="italic">React (Next.js), Angular, .NET Core, .NET Framework, Legacy ASP.NET applications</span>
-        .
+        experience. I <s>enjoy</s> <i>LOVE</i> building{' '}
+        <span className="italic">web, mobile & software applications</span>. My focus is{' '}
+        <span className="italic">React (Next.js), Angular, TypeScript, .NET Core, .NET Framework</span> and modern web
+        technologies.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -72,12 +66,12 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact me here <BsArrowRight className="opactity-70  group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110  hover:bg-gray-950 hover:text-white active:scale-105 transition cursor-pointer border border-black/10"
           href="/CV.docx"
           download
         >

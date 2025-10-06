@@ -1,28 +1,19 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
-import { useActiveSectionContext } from '@/context/active-section-context'
-import { useInView } from 'react-intersection-observer'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '@/lib/data'
-import { ImInsertTemplate } from 'react-icons/im'
-import Image from 'next/image'
+import { useSectionInView } from '@/lib/hooks'
+
+import 'react-vertical-timeline-component/style.min.css'
 
 export default function Experience() {
-  const { setActiveSection } = useActiveSectionContext()
-  const { ref, inView } = useInView({ threshold: 0.85 })
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection('Experience')
-    }
-  }, [inView, setActiveSection])
+  const { ref } = useSectionInView('Experience', 0.2)
 
   return (
     <section ref={ref} id="experience" className="mb-10 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-20">
-      <SectionHeading>Experience</SectionHeading>
+      <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline>
         {experiencesData.map((exp, index) => (
           <React.Fragment key={index}>

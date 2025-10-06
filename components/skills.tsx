@@ -1,29 +1,46 @@
 'use client'
-
-import React, { useEffect } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
-import { useActiveSectionContext } from '@/context/active-section-context'
-import { useInView } from 'react-intersection-observer'
 import { skillsData } from '@/lib/data'
+import { useSectionInView } from '@/lib/hooks'
+import { animate, motion } from 'framer-motion'
+
+const fadeInAnimVariants = {
+  initial: () => ({
+    opactiy: 0,
+    y: 100,
+  }),
+
+  animate: (index: number) => {
+    return {
+      opactiy: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index,
+      },
+    }
+  },
+}
 
 export default function Skills() {
-  const { setActiveSection } = useActiveSectionContext()
-  const { ref, inView } = useInView({ threshold: 1 })
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection('Skills')
-    }
-  }, [inView, setActiveSection])
+  const { ref } = useSectionInView('Skills')
 
   return (
-    <section ref={ref} id="skills" className="mb-10 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-20">
-      <SectionHeading>Skills</SectionHeading>
+    <section ref={ref} id="skills" className="mb-20 max-w-[53rem] text-center leading-8 scroll-mt-28 sm:mb-40">
+      <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
-          <li className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 hover:bg-amber-600" key={index}>
+          <motion.li
+            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 hover:bg-amber-600"
+            key={index}
+            variants={fadeInAnimVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            custom={index}
+          >
             {skill}
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>
