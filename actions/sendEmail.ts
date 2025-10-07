@@ -4,8 +4,6 @@ import { getErrorMessage, isValidString } from '@/lib/utils'
 import React from "react"
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export const sendEmail = async (formData: FormData) => {
   const email = formData.get('email') as string
   const message = formData.get('message') as string
@@ -20,6 +18,17 @@ export const sendEmail = async (formData: FormData) => {
       error: 'Invalid sender message',
     }
   }
+
+  // Check if API key is available
+  if (!process.env.RESEND_API_KEY) {
+    return {
+      error: 'Email service is not configured. Please contact the administrator.',
+    }
+  }
+
+  // Initialize Resend inside the function to avoid build-time errors
+  const resend = new Resend(process.env.RESEND_API_KEY)
+
   let data;
   try {
       data = await resend.emails.send({
@@ -32,7 +41,9 @@ export const sendEmail = async (formData: FormData) => {
         email: email}),
     })
   } catch (error: unknown) {
-    getErrorMessage(error)
+    return {
+      error: getErrorMessage(error),
+    }
   }
 
   return {
