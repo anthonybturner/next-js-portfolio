@@ -1,12 +1,14 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
 import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://anthonybturner-next.vercel.app'),
   title: 'Anthony Turner | Full-Stack Developer Portfolio',
   description:
     'Anthony is a full-stack developer with 10+ years of experience in React, Next.js, Angular, .NET, and cloud technologies. View my projects and experience.',
@@ -57,6 +59,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>
     </html>

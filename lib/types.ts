@@ -2,6 +2,7 @@ import { links } from "./data";
 
 export type SectionName = (typeof links)[number]['name']
 export type useSectionInViewProps= {sectionName: SectionName;}
+
 /**
  * Type definition for the context value provided by ActiveSectionContextProvider.
  * Contains the current active section and a function to update it.
