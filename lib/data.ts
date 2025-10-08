@@ -43,7 +43,7 @@ export const experiencesData = [
     title: "Applications Developer (Contract) - AppTech",
     location: "Norwalk, CT (Hybrid)",
     description:
-      "Modernizing legacy Angular/.NET Framework applications to Angular 19 and .NET 8. Developing scalable APIs with ASP.NET Core, RxJS, and TypeScript; implementing efficient DTO/entity mapping. Contributing to CI/CD pipeline integration in Azure DevOps for automated testing and deployments.",
+      "Modernizing legacy Angular applications to Angular 19 and working with .NET Framework systems. Working with existing APIs using ASP.NET Core, RxJS, and TypeScript; managing and implementing efficient DTO/entity mapping. Contributing to CI/CD pipeline integration in Azure DevOps for automated testing and deployments. Participating in daily standups in an agile environment.",
     icon: React.createElement(FaReact),
     image: corpcommentImg,
     date: "Apr 2025 - Jun 2025",
@@ -61,7 +61,7 @@ export const experiencesData = [
     title: ".NET Software Developer - Ryan Specialties",
     location: "Rockhill, NY",
     description:
-      "Worked on legacy system modernization, migrating VB.NET applications to C#/.NET 4, improving maintainability and execution speed by 60%. Automated bulk email and Weather API systems, reducing manual processes and operational errors.",
+      "Worked on legacy system modernization, migrating VB.NET applications to C#/.NET 4, improving maintainability and execution speed by 60%. Created bulk email applications for automating email processes and modernized a Weather API application from legacy VB code, reducing manual processes and operational errors.",
     icon: React.createElement(CgWorkAlt),
     image: corpcommentImg,
     date: "Jan 2023 - Aug 2023",
@@ -70,7 +70,7 @@ export const experiencesData = [
     title: ".NET Full-Stack Developer - InfoEd Global",
     location: "Albany, NY",
     description:
-      "Developed and maintained government and educational solutions using C#, legacy ASP, WebForms, ASP.NET MVC, Angular, JavaScript, and Telerik controls. Implemented XML/XSD integrations and worked with REST APIs and XML data processing for enterprise systems.",
+      "Developed and maintained enterprise solutions for government and educational sectors using full-stack .NET technologies (C#, ASP.NET MVC, WebForms, legacy ASP), JavaScript, and jQuery. Enhanced user interfaces with Telerik component libraries and implemented robust data processing through XML/XSD integrations and REST API development.",
     icon: React.createElement(FaReact),
     image: corpcommentImg,
     date: "Nov 2018 - Nov 2022",

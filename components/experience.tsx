@@ -1,10 +1,10 @@
 'use client'
 
-import React from 'react'
-import SectionHeading from './section-heading'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { experiencesData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
+import React from 'react'
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import SectionHeading from './section-heading'
 
 import 'react-vertical-timeline-component/style.min.css'
 
