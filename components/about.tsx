@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useEffect } from 'react'
-import SectionHeading from './section-heading'
-import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks'
+import { motion } from 'framer-motion'
+import SectionHeading from './section-heading'
 
 export default function About() {
   const { ref } = useSectionInView('About')
@@ -19,22 +18,23 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        {' '}
-        After recieving my GED, A+ Certification and Microsoft Office Specialist from BOCES Trade School, I decided to
-        pursue my passion for programming. I enrolled in college at Ulster County Community College and then after, the
-        State University of New Paltz. After graduating with <span className="italic">two</span> degrees in{' '}
-        <span className="font-medium">Computer Science</span>, I decided to pursue my passion for programming and began
-        my career as a <span className="font-medium">full-stack web developer</span>.{' '}
+        After earning my degrees in <span className="font-medium">Computer Science</span> from Ulster County Community
+        College and SUNY New Paltz, I launched my career as a <span className="font-medium">full-stack developer</span>.
+        Over the past <span className="font-medium">10+ years</span>, I&apos;ve built scalable web applications, led
+        development projects, and solved complex technical challenges.{' '}
         <span className="italic">My favorite part of programming</span> is the problem-solving aspect. I{' '}
         <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. My core
-        stack is <span className="font-medium">.NET, Angular, React, Next.js, Node.js, PostGresSql and Sql Server</span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to learn new technologies. I am currently
-        looking for a <span className="font-medium">full-time position</span> as a software developer.
+        stack is{' '}
+        <span className="font-medium">
+          .NET Core, React, Next.js, TypeScript, Angular, Node.js, SQL Server, and PostgreSQL
+        </span>
+        . I&apos;m always exploring new technologies and currently seeking a{' '}
+        <span className="font-medium">full-time position</span> where I can contribute to meaningful projects.
       </p>
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing video games, watching movies and
-        dancing. I also enjoy <span className="font-medium">learning new things</span>. I am currently learning about{' '}
-        <span className="font-medium">religion and history</span>. I&apos;m also learning how to play the piano.
+        <span className="italic">When I&apos;m not coding</span>, I enjoy gaming, movies, and dancing. I&apos;m also
+        passionate about <span className="font-medium">continuous learning</span> and currently exploring piano as a
+        creative outlet.
       </p>
     </motion.section>
   )

@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
-
+import './home.css'
+0
 export default function Home() {
   const { ref } = useSectionInView('Home')
   return (
@@ -48,12 +49,10 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m an experienced{' '}
-        <span className="font-bold">full-stack developer</span> with <span className="font-bold">10 years</span> of
-        experience. I <s>enjoy</s> <i>LOVE</i> building{' '}
-        <span className="italic">web, mobile & software applications</span>. My focus is{' '}
-        <span className="italic">React (Next.js), Angular, TypeScript, .NET Core, .NET Framework</span> and modern web
-        technologies.
+        <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m a{' '}
+        <span className="font-bold">seasoned full-stack developer</span> with{' '}
+        <span className="font-bold">10+ years</span> building scalable web applications. I specialize in{' '}
+        <span className="font-bold">React/Next.js, .NET Core, TypeScript, and SQL Server</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

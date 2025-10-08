@@ -4,9 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 // Update these imports to match your actual project images
+import marvelRivalsAppImg from "@/public/marvel-rivals-site.png";
 import modernStackImg from "@/public/modern-stack-solutions.png";
 import portfolioImg from "@/public/portfolio-website.png";
-import marvelRivalsAppImg from "@/public/marvel-rivals-site.png";
 import reactMovieDatabaseAppImg from "@/public/react-movie-database.png";
 
 import corpcommentImg from "@/public/navy-project-main.jpg";
@@ -40,94 +40,58 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated BOCES Trade School",
-    location: "Port Ewen, NY",
+    title: "Applications Developer (Contract) - AppTech",
+    location: "Norwalk, CT (Hybrid)",
     description:
-      "I achieved graduation for my GED diploma, Microsoft Office Specialist (MOS), A+ Technician, after 1 year of studying. I immediately enrolled into UCCC for my Associates.",
-    icon: React.createElement(LuGraduationCap),
-    image: undefined,
-    date: "2011",
-  },
-  {
-    title: "Graduated UCCC - Ulster County Community College",
-    location: "Stone Ridge, NY",
-    description:
-      "I graduated after 2 years of studying computer science. I immediately enrolled into SUNY New Paltz for my Bachelors.",
-    icon: React.createElement(LuGraduationCap),
-    image: undefined,
-    date: "2014",
-  },
-  {
-    title: ".NET Full-Stack Developer Intern - Precision Care Software",
-    location: "New Paltz, NY",
-    description:
-      "Developed web/mobile apps with C#, VB.NET, ASP.NET, AngularJS, and RESTful APIs. Optimized Oracle/SQL queries for efficient SPA data retrieval.",
-    icon: React.createElement(CgWorkAlt),
-    image: undefined,
-    date: "Apr 2015 - Apr 2016",
-  },
-  {
-    title: "iOS/Android Mobile Developer (Contract) - Digital Catnip",
-    location: "Beacon, NY",
-    description:
-      "Developed cross-platform fitness apps using Swift (iOS) and Java (Android). Integrated RESTful APIs for data tracking, synchronization, and analysis. Managed mobile databases and designed responsive, user-friendly UI/UX.",
-    icon: React.createElement(CgWorkAlt),
-    image: corpcommentImg,
-    date: "Jan 2016 - Jun 2016",
-  },
-  {
-    title: "WordPress / PHP Developer - Rev Design",
-    location: "Patterson, NY",
-    description:
-      "Built dynamic WordPress sites with PHP and boilerplate templates; optimized MySQL databases. Designed responsive UI/UX using HTML5, CSS3, Bootstrap, and jQuery.",
-    icon: React.createElement(CgWorkAlt),
-    image: corpcommentImg,
-    date: "Dec 2017 - Nov 2018",
-  },
-  {
-    title: "Graduated State University of New Paltz",
-    location: "New Paltz, NY",
-    description:
-      "I graduated after 4 years of studying computer science. I immediately found a job as a full-stack developer.",
-    icon: React.createElement(LuGraduationCap),
-    image: corpcommentImg,
-    date: "2018",
-  },
-  {
-    title: ".NET Full-Stack Developer - InfoEd Global",
-    location: "Albany, NY",
-    description:
-      "Built full-stack solutions using C#, VB.NET, ASP.NET, Angular, and JavaScript. Implemented XML/XSD integrations with ASP.NET Web Forms; optimized SQL Server/Oracle databases. Designed API logic to cache third-party data locally, improving performance and reducing redundant calls.",
+      "Modernizing legacy Angular/.NET Framework applications to Angular 19 and .NET 8. Developing scalable APIs with ASP.NET Core, RxJS, and TypeScript; implementing efficient DTO/entity mapping. Contributing to CI/CD pipeline integration in Azure DevOps for automated testing and deployments.",
     icon: React.createElement(FaReact),
     image: corpcommentImg,
-    date: "Nov 2018 - Nov 2022",
+    date: "Apr 2025 - Jun 2025",
   },
   {
-    title: ".NET Software Developer (Legacy Modernization) (Contract) - Ryan Specialties",
-    location: "Rockhill, NY",
-    description:
-      "Migrated legacy VB.NET applications to C#/.NET 4, improving maintainability and execution speed. Automated bulk email and Weather API systems, reducing manual processes and errors.",
-    icon: React.createElement(CgWorkAlt),
-    image: corpcommentImg,
-    date: "Jan 2023 - Aug 2023",
-  },
-  {
-    title: "Cloud Software Engineer (Contract) - Constellation Software Engineering",
+    title: "Cloud Software Engineer - Constellation Software Engineering",
     location: "Remote",
     description:
-      "Built secure cloud applications for federal Navy projects using Azure, ASP.NET, .NET Core, and Python/Django. Implemented OAuth authentication systems; optimized SQL Server/PostgreSQL queries. Participated in Agile sprints, code reviews, and deployments.",
+      "Migrated, managed, and built secure cloud applications using Python/Django for federal Navy projects. Managed reporting systems with .NET Core and SQL Server, handling data management and report generation. Worked on OAuth authentication systems. Participated in Agile development with code reviews and automated deployments.",
     icon: React.createElement(FaReact),
     image: corpcommentImg,
     date: "Sept 2023 - Aug 2024",
   },
   {
-    title: "Applications Developer (Contract) - AppTech",
-    location: "Norwalk, CT (Hybrid)",
+    title: ".NET Software Developer - Ryan Specialties",
+    location: "Rockhill, NY",
     description:
-      "Modernized Angular/.NET Framework apps to Angular 19 and .NET 8. Developed scalable APIs with ASP.NET Core, RxJS, and TypeScript; implemented DTO/entity mapping. Integrated CI/CD pipelines in Azure DevOps for automated testing and deployments.",
+      "Worked on legacy system modernization, migrating VB.NET applications to C#/.NET 4, improving maintainability and execution speed by 60%. Automated bulk email and Weather API systems, reducing manual processes and operational errors.",
+    icon: React.createElement(CgWorkAlt),
+    image: corpcommentImg,
+    date: "Jan 2023 - Aug 2023",
+  },
+  {
+    title: ".NET Full-Stack Developer - InfoEd Global",
+    location: "Albany, NY",
+    description:
+      "Developed and maintained government and educational solutions using C#, legacy ASP, WebForms, ASP.NET MVC, Angular, JavaScript, and Telerik controls. Implemented XML/XSD integrations and worked with REST APIs and XML data processing for enterprise systems.",
     icon: React.createElement(FaReact),
     image: corpcommentImg,
-    date: "Apr 2025 - Jun 2025",
+    date: "Nov 2018 - Nov 2022",
+  },
+  {
+    title: "Bachelor's Degree in Computer Science",
+    location: "SUNY New Paltz, NY",
+    description:
+      "Graduated with comprehensive foundation in algorithms, data structures, software engineering, database design, web applications, and design.",
+    icon: React.createElement(LuGraduationCap),
+    image: corpcommentImg,
+    date: "2018",
+  },
+  {
+    title: "Associate's Degree in Computer Science",
+    location: "Ulster County Community College, NY",
+    description:
+      "Earned foundational knowledge in programming, computer systems, software development principles, web applications, and design.",
+    icon: React.createElement(LuGraduationCap),
+    image: corpcommentImg,
+    date: "2014",
   },
 ] as const;
 
@@ -173,12 +137,9 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
+  "SQL Server",
   "PostgreSQL",
   "Python",
   "Django",
@@ -187,6 +148,9 @@ export const skillsData = [
   "C# Generics", // ✅ Added C# Generics
   ".NET 8",
   "ASP.NET Core",
+  "Legacy ASP.NET",
+  "PHP",
+  "WordPress",
   "RxJS",
   "Azure DevOps",
   "Angular",
