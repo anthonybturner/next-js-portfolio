@@ -1,16 +1,13 @@
 'use client'
-
-import { useActiveSectionContext } from '@/context/active-section-context'
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
 
-export default function Intro() {
+export default function Home() {
   const { ref } = useSectionInView('Home')
   return (
     <section ref={ref} id="home" className="mb-10 max-w-[50rem] text-center sm:mb-20 scroll-mt-28">
