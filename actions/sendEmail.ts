@@ -20,6 +20,9 @@ export const sendEmail = async (formData: FormData) => {
   }
 
   // Check if API key is available
+  console.log('API Key exists:', !!process.env.RESEND_API_KEY)
+  console.log('API Key first 10 chars:', process.env.RESEND_API_KEY?.substring(0, 10))
+  
   if (!process.env.RESEND_API_KEY) {
     return {
       error: 'Email service is not configured. Please contact the administrator.',
