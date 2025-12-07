@@ -149,10 +149,12 @@ export const skillsData = [
   ".NET 8",
   "ASP.NET Core",
   "Legacy ASP.NET",
+  "OAuth2",
+  "JWT",
   "PHP",
   "WordPress",
   "RxJS",
   "Azure DevOps",
   "Angular",
-  "Azure SQL",
+  "Azure SQL",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 ] as const;

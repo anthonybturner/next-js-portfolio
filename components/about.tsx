@@ -20,8 +20,8 @@ export default function About() {
       <p className="mb-3">
         After earning my degrees in <span className="font-medium">Computer Science</span> from Ulster County Community
         College and SUNY New Paltz, I launched my career as a <span className="font-medium">full-stack developer</span>.
-        Over the past <span className="font-medium">10+ years</span>, I&apos;ve built scalable web applications, led
-        development projects, and solved complex technical challenges.{' '}
+        Over the past <span className="font-medium">10+ years</span>, I&apos;ve built scalable web applications,
+        contributed to development projects, and solved complex technical challenges.{' '}
         <span className="italic">My favorite part of programming</span> is the problem-solving aspect. I{' '}
         <span className="underline">love</span> the feeling of finally figuring out a solution to a problem. My core
         stack is{' '}
