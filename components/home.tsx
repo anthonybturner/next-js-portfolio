@@ -20,7 +20,7 @@ export default function Home() {
             transition={{ type: 'tween', duration: 0.2 }}
           >
             <Image
-              src="https://media.licdn.com/dms/image/v2/D4E03AQFDLV4eL39Hqw/profile-displayphoto-shrink_800_800/B4EZNuZHioHEAg-/0/1732723898932?e=1762387200&v=beta&t=_kpM4TUR_IF_r1qoJ4w8hEHRwTdHILJ2Yb94FljKNow"
+              src="/images/self.jpg"
               alt="anthony portrait"
               width="192"
               height="192"

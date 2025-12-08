@@ -3,13 +3,13 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-// Update these imports to match your actual project images
-import marvelRivalsAppImg from "@/public/marvel-rivals-site.png";
-import modernStackImg from "@/public/modern-stack-solutions.png";
-import portfolioImg from "@/public/portfolio-website.png";
-import reactMovieDatabaseAppImg from "@/public/react-movie-database.png";
+// Project images - using Next.js public folder pattern
+import marvelRivalsAppImg from "@/public/images/marvel-rivals-site.png";
+import modernStackImg from "@/public/images/modern-stack-solutions.png";
+import portfolioImg from "@/public/images/portfolio-website.png";
+import reactMovieDatabaseAppImg from "@/public/images/react-movie-database.png";
 
-import corpcommentImg from "@/public/navy-project-main.jpg";
+import corpcommentImg from "@/public/images/navy-project-main.jpg";
 
 export const links = [
   {
