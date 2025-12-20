@@ -50,9 +50,10 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I&apos;m Anthony.</span> I&apos;m a{' '}
-        <span className="font-bold">seasoned full-stack developer</span> with{' '}
-        <span className="font-bold">10+ years</span> building scalable web applications. I specialize in{' '}
-        <span className="font-bold">.NET/Core,Angular, React/Next.js, TypeScript, JavaScript and databses (SQL Server, SQL, Oracle)</span>.
+        <span className="font-bold">seasoned professional full-stack developer</span> with{' '}
+        <span className="font-bold">10+ years</span> building scalable web applications. I specialize in{' '} 
+        <span className="font-bold">C#, .NET/Core, Angular, TypeScript, JavaScript </span> and databases (SQL Server, SQL, Oracle).
+        Most recently, I have been focusing on <span className="font-bold">Angular and React/Next.js</span> on the side..
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
