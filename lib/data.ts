@@ -4,10 +4,13 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 // Project images - using Next.js public folder pattern
+import marvelRivalsAppThumb from "@/public/images/marvel-rivals-main-thumb.jpg";
 import marvelRivalsAppImg from "@/public/images/marvel-rivals-site.png";
 import modernStackImg from "@/public/images/modern-stack-solutions.png";
 import portfolioImg from "@/public/images/portfolio-website.png";
 import reactMovieDatabaseAppImg from "@/public/images/react-movie-database.png";
+import rivalsPulseThumb from "@/public/images/rivals-pulse-thumb.jpg";
+import rivalsPulseImg from "@/public/images/rivals-pulse.png";
 
 import corpcommentImg from "@/public/images/navy-project-main.jpg";
 
@@ -97,11 +100,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Personal Portfolio Website",
+    title: "Personal Portfolio Website (alternative)",
     description:
       "A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, interactive navigation with active section tracking, contact form integration, and optimized performance. Showcases professional experience, skills, and projects with a clean, accessible design.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Vercel"],
     imageUrl: portfolioImg,
+    thumbnailUrl: portfolioImg,
+    github: "https://github.com/anthonybturner/software-dev-portfolio",
+    website: "https://anthonybturner.vercel.app/",
   },
   {
     title: "Modern Stack Solutions",
@@ -109,6 +115,9 @@ export const projectsData = [
       "A comprehensive business website showcasing modern web development services and solutions. Built with Angular and TypeScript for dynamic functionality and responsive design. Features service portfolios, client testimonials, project showcases, and contact integration. Demonstrates full-stack development capabilities with modern Angular architecture and component-based design.",
     tags: ["Angular", "TypeScript", "CSS3", "Business Website", "Professional Services", "Component Architecture"],
     imageUrl: modernStackImg,
+    thumbnailUrl: modernStackImg,
+    github: "https://github.com/anthonybturner/modern-stack-solutions",
+    website: "https://modern-stack-solutions.vercel.app/",
   },
   {
     title: "React Movie Database",
@@ -116,13 +125,28 @@ export const projectsData = [
       "A comprehensive movie discovery application built with React and integrated with The Movie Database (TMDb) API. Features include movie search, detailed information display, ratings, trailers, and user favorites. Implements responsive design, dynamic routing, and state management for seamless user experience.",
     tags: ["React", "JavaScript", "TMDb API", "CSS3", "REST APIs", "Responsive Design"],
     imageUrl: reactMovieDatabaseAppImg,
+    thumbnailUrl: reactMovieDatabaseAppImg,
+    github: "https://github.com/anthonybturner/ReactMovieDatabase",
+    website: "https://react-movie-database-nine.vercel.app",
   },
   {
-    title: "Marvel Rivals Stats Fan Site",
+    title: "Marvel Rivals Stats Fan Site (WIP)",
     description:
       "An interactive fan site dedicated to Marvel Rivals game statistics and character information. Built with Angular and TypeScript to provide real-time stats, character comparisons, and game insights. Features dynamic data visualization, Angular services for data management, and responsive design for gaming enthusiasts.",
     tags: ["Angular", "TypeScript", "CSS3", "API Integration", "Data Visualization", "Gaming", "Angular Services"],
     imageUrl: marvelRivalsAppImg,
+    thumbnailUrl: marvelRivalsAppThumb,
+    github: "https://github.com/anthonybturner/marvelrivalsui",
+    website: "https://marvelrivalsstats.vercel.app",
+  },
+  {
+    title: "Rivals Pulse - Marvel Rivals Overwolf App (available soon on appstore)",
+    description:
+      "A powerful Overwolf application for Marvel Rivals that provides real-time in-game insights and statistics. Built with Angular and TypeScript to deliver seamless integration with the game client. Features live player tracking, match analytics, character performance metrics, and interactive overlays for competitive gaming. Demonstrates advanced Angular development for desktop gaming applications.",
+    tags: ["Angular", "TypeScript", "Overwolf API", "Gaming", "Real-time Analytics", "Desktop Application", "RxJS"],
+    imageUrl: rivalsPulseImg,
+    thumbnailUrl: rivalsPulseThumb,
+    website: "https://www.overwolf.com/appstore",
   },
 ] as const;
 
@@ -156,5 +180,5 @@ export const skillsData = [
   "RxJS",
   "Azure DevOps",
   "Angular",
-  "Azure SQL",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  "Azure SQL",
 ] as const;
