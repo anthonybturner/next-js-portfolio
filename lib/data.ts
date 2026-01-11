@@ -102,8 +102,8 @@ export const projectsData = [
   {
     title: "Personal Portfolio Website (alternative)",
     description:
-      "A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, interactive navigation with active section tracking, contact form integration, and optimized performance. Showcases professional experience, skills, and projects with a clean, accessible design.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React", "Vercel"],
+      "This portfolio exemplifies these principles: built entirely by me using Angular 19 for a component-driven SPA architecture, TypeScript for type safety, and SCSS for modular styling. I applied SOLID patterns throughout—extracting components by responsibility, using services for data management, configuring behavior through dependency injection, and organizing shared models in a models folder for reusability. The application demonstrates advanced Angular routing, RxJS reactive patterns, Angular Signals for fine-grained reactivity, computed properties for derived state management, API integration, accessibility best practices, and automated CI/CD deployment on Vercel—all while maintaining clean, refactorable code.",
+    tags: ["Angular", "TypeScript", "SCSS", "RxJS", "Angular Signals", "Vercel", "SOLID Principles"],
     imageUrl: portfolioImg,
     thumbnailUrl: portfolioImg,
     github: "https://github.com/anthonybturner/software-dev-portfolio",
@@ -142,8 +142,8 @@ export const projectsData = [
   {
     title: "Rivals Pulse - Marvel Rivals Overwolf App (available soon on appstore)",
     description:
-      "A powerful Overwolf application for Marvel Rivals that provides real-time in-game insights and statistics. Built with Angular and TypeScript to deliver seamless integration with the game client. Features live player tracking, match analytics, character performance metrics, and interactive overlays for competitive gaming. Demonstrates advanced Angular development for desktop gaming applications.",
-    tags: ["Angular", "TypeScript", "Overwolf API", "Gaming", "Real-time Analytics", "Desktop Application", "RxJS"],
+      "A powerful Overwolf application for Marvel Rivals that provides real-time in-game insights and statistics. Built with Angular and TypeScript to deliver seamless integration with the game client. Features live player tracking, match analytics, character performance metrics, and interactive overlays for competitive gaming. Applies SOLID principles through modular component architecture, dependency injection, and reusable services for data management. Demonstrates advanced Angular development for desktop gaming applications.",
+    tags: ["Angular", "TypeScript", "Overwolf API", "Gaming", "Real-time Analytics", "Desktop Application", "RxJS", "SOLID Principles"],
     imageUrl: rivalsPulseImg,
     thumbnailUrl: rivalsPulseThumb,
     website: "https://www.overwolf.com/appstore",

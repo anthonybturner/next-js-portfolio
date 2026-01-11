@@ -11,7 +11,7 @@ import './home.css'
 export default function Home() {
   const { ref } = useSectionInView('Home')
   return (
-    <section ref={ref} id="home" className="mb-10 max-w-[50rem] text-center sm:mb-20 scroll-mt-28">
+    <section ref={ref} id="home" className="mb-10 max-w-[50rem]  sm:mb-20 scroll-mt-28">
       <div className="flex items-center justify-center ">
         <div className="relative">
           <motion.div
@@ -53,13 +53,30 @@ export default function Home() {
         <span className="font-bold">seasoned professional full-stack developer</span> with{' '}
         <span className="font-bold">10+ years</span> building scalable web applications. I specialize in{' '} 
         <span className="font-bold">C#, .NET/Core, Angular, TypeScript, JavaScript </span> and databases (SQL Server, SQL, Oracle).
-        Most recently, I have been focusing on <span className="font-bold">Angular and React/Next.js</span> on the side..
+        Most recently, I have been focusing on <span className="font-bold">Angular, React, Next.js, TypeScript and SOLID principles</span>.
       </motion.h1>
+      <motion.div
+        className="mb-10 px-4 text-base leading-relaxed text-gray-700"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <p className="mb-6">
+          <span className="font-bold">Passionate advocate for SOLID principles and clean architecture.</span> I prioritize object encapsulation, dependency injection, and separation of concerns to create extensible, testable codebases that scale with business needs. Every solution I deliver emphasizes code clarity, maintainability, and long-term sustainability—recognizing that the true cost of software lies in its evolution, not its creation.
+        </p>
+        <p>
+          <span className="font-bold">This portfolio</span> exemplifies these principles: built entirely by me using <span className="font-bold">Next.js</span> for a component-driven architecture, 
+          <span className="font-bold">TypeScript</span> for type safety, and <span className="font-bold">Tailwind CSS</span> for responsive styling. 
+          I applied SOLID patterns throughout—organizing components by responsibility, using custom hooks for data management, managing state through React patterns, 
+          and maintaining shared utilities and types for reusability. 
+          The application demonstrates routing, reactive state management, accessibility best practices, and automated CI/CD deployment on Vercel—all while maintaining clean, refactorable code.
+        </p>
+      </motion.div>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.2 }}
       >
         <Link
           href="#contact"
