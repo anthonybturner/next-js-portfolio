@@ -65,10 +65,9 @@ export default function Home() {
           <span className="font-bold">Passionate advocate for SOLID principles and clean architecture.</span> I prioritize object encapsulation, dependency injection, and separation of concerns to create extensible, testable codebases that scale with business needs. Every solution I deliver emphasizes code clarity, maintainability, and long-term sustainability—recognizing that the true cost of software lies in its evolution, not its creation.
         </p>
         <p>
-          <span className="font-bold">This portfolio</span> exemplifies these principles: built entirely by me using <span className="font-bold">Next.js</span> for a component-driven architecture, 
+          <span className="font-bold">This portfolio</span>, built entirely by me, using <span className="font-bold">Next.js</span> for a component-driven architecture, 
           <span className="font-bold">TypeScript</span> for type safety, and <span className="font-bold">Tailwind CSS</span> for responsive styling. 
-          I applied SOLID patterns throughout—organizing components by responsibility, using custom hooks for data management, managing state through React patterns, 
-          and maintaining shared utilities and types for reusability. 
+          I applied custom hooks for data management, managing state through React patterns, and maintaining shared utilities and types for reusability. 
           The application demonstrates routing, reactive state management, accessibility best practices, and automated CI/CD deployment on Vercel—all while maintaining clean, refactorable code.
         </p>
       </motion.div>
