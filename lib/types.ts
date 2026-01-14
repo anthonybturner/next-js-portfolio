@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { links } from "./data";
 
 export type SectionName = (typeof links)[number]['name']
@@ -6,8 +7,8 @@ export type JobCertification = {
   readonly title: string;
   readonly description: string;
   readonly tags: readonly string[];
-  readonly imageUrl: any;
-  readonly thumbnailUrl: any;
+  readonly imageUrl: StaticImageData;
+  readonly thumbnailUrl: StaticImageData;
   readonly website: string;
   readonly pdfUrl?: string; // Optional with '?'
 };

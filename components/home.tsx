@@ -7,7 +7,7 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
 import './home.css'
-0
+
 export default function Home() {
   const { ref } = useSectionInView('Home')
   return (
