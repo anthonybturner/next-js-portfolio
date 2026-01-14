@@ -1,0 +1,76 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#107c10;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc837;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Certificate background -->
+  <rect width="400" height="500" fill="url(#bgGradient)" rx="10"/>
+  
+  <!-- White accent border -->
+  <rect x="15" y="15" width="370" height="470" fill="none" stroke="white" stroke-width="3" rx="8"/>
+  
+  <!-- Ribbon at top -->
+  <g id="ribbon">
+    <polygon points="80,0 100,40 120,0 320,0 340,40 360,0 400,0 400,60 0,60 0,0" fill="url(#ribbonGradient)"/>
+  </g>
+
+  <!-- Seal/Badge circle -->
+  <circle cx="200" cy="120" r="60" fill="white" opacity="0.95"/>
+  <circle cx="200" cy="120" r="55" fill="none" stroke="#0078d4" stroke-width="2"/>
+  
+  <!-- Microsoft Office icon representation -->
+  <g transform="translate(200, 120)">
+    <!-- M for Microsoft -->
+    <text x="0" y="20" font-size="40" font-weight="bold" text-anchor="middle" fill="#0078d4" font-family="Arial, sans-serif">O</text>
+  </g>
+
+  <!-- Stars around seal -->
+  <g fill="#ffc837">
+    <polygon points="200,45 205,60 220,60 210,68 214,83 200,75 186,83 190,68 180,60 195,60" />
+    <polygon points="290,90 294,102 308,102 298,110 301,123 290,115 279,123 282,110 272,102 286,102" />
+    <polygon points="110,90 114,102 128,102 118,110 121,123 110,115 99,123 102,110 92,102 106,102" />
+  </g>
+
+  <!-- Certificate text -->
+  <text x="200" y="210" font-size="28" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+    MICROSOFT OFFICE
+  </text>
+  
+  <text x="200" y="245" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffc837" font-family="Arial, sans-serif">
+    SPECIALIST
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="80" y1="270" x2="320" y2="270" stroke="white" stroke-width="2" opacity="0.6"/>
+
+  <!-- Achievement text -->
+  <text x="200" y="310" font-size="14" text-anchor="middle" fill="white" font-family="Arial, sans-serif" opacity="0.9">
+    Certified Professional
+  </text>
+
+  <!-- Bottom text -->
+  <text x="200" y="360" font-size="12" text-anchor="middle" fill="white" font-family="Arial, sans-serif" opacity="0.8">
+    Microsoft Office Applications
+  </text>
+
+  <text x="200" y="380" font-size="12" text-anchor="middle" fill="white" font-family="Arial, sans-serif" opacity="0.8">
+    Word • Excel • PowerPoint
+  </text>
+
+  <!-- Footer line -->
+  <line x1="50" y1="420" x2="350" y2="420" stroke="white" stroke-width="1" opacity="0.4"/>
+
+  <!-- Signature line placeholders -->
+  <line x1="70" y1="460" x2="170" y2="460" stroke="white" stroke-width="1" opacity="0.5"/>
+  <text x="120" y="475" font-size="10" text-anchor="middle" fill="white" font-family="Arial, sans-serif" opacity="0.6">
+    Authorized
+  </text>
+</svg>

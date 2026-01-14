@@ -4,6 +4,12 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 // Project images - using Next.js public folder pattern
+import angularMasteryThumb from "@/public/images/certifications/angular-mastery-thumb.png";
+import angularMasteryImg from "@/public/images/certifications/angular-mastery.png";
+import mosThumb from "@/public/images/certifications/mos-thumb.svg";
+import mosImg from "@/public/images/certifications/mos.svg";
+import solidThumb from "@/public/images/certifications/solid-thumb.png";
+import solidImg from "@/public/images/certifications/solid.png";
 import marvelRivalsAppThumb from "@/public/images/marvel-rivals-main-thumb.jpg";
 import marvelRivalsAppImg from "@/public/images/marvel-rivals-site.png";
 import modernStackImg from "@/public/images/modern-stack-solutions.png";
@@ -11,6 +17,7 @@ import portfolioImg from "@/public/images/portfolio-website.png";
 import reactMovieDatabaseAppImg from "@/public/images/react-movie-database.png";
 import rivalsPulseThumb from "@/public/images/rivals-pulse-thumb.jpg";
 import rivalsPulseImg from "@/public/images/rivals-pulse.png";
+
 
 import corpcommentImg from "@/public/images/navy-project-main.jpg";
 
@@ -30,6 +37,10 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Certifications",
+    hash: "#certifications",
   },
   {
     name: "Experience",
@@ -181,4 +192,36 @@ export const skillsData = [
   "Azure DevOps",
   "Angular",
   "Azure SQL",
+] as const;
+
+export const certificationsData = [
+   {
+    title: "Angular Mastery Certification",
+    description:
+      "Successfully completed the course Angular - The Complete Guide (2025 Edition) on 01/10/2026 as taught by Maximilian Schwarzmüller on Udemy.",
+    tags: ["Angular", "TypeScript", "RxJS", "SOLID Principles"],
+    imageUrl: angularMasteryImg,
+    thumbnailUrl: angularMasteryThumb,
+    website: "https://www.udemy.com/course/the-complete-guide-to-angular-2",
+    pdfUrl: "/documents/certifications/angular-mastery.pdf",
+  },
+    {
+    title: "SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion Principles)",
+    description:
+      "Successfully completed the course SOLID Principles: Introducing Software Architecture & Design on 01/06/2026 as taught by George Sonora on Udemy.",
+    tags: ["SOLID", "Java"],
+    imageUrl: solidImg,
+    thumbnailUrl: solidThumb,
+    website: "https://www.udemy.com/course/solid-design",
+    pdfUrl: "/documents/certifications/solid.pdf",
+  },
+  {
+    title: "Microsoft Office Specialist",
+    description:
+      "Successfully completed the Microsoft Office Specialist certification to demonstrate proficiency in Microsoft Office applications including Word, Excel, Access, PowerPoint, and Outlook.",
+    tags: ["Microsoft Office", "Excel", "Access", "Word", "PowerPoint"],
+    imageUrl: mosImg,
+    thumbnailUrl: mosThumb,
+    website: "https://learn.microsoft.com/en-us/certifications/microsoft-office-specialist-master-certification/",
+  },
 ] as const;
