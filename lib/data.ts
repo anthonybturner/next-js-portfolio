@@ -2,7 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
+import type { JobCertification } from "./types";
+ 
 // Project images - using Next.js public folder pattern
 import angularMasteryThumb from "@/public/images/certifications/angular-mastery-thumb.png";
 import angularMasteryImg from "@/public/images/certifications/angular-mastery.png";
@@ -13,13 +14,11 @@ import solidImg from "@/public/images/certifications/solid.png";
 import marvelRivalsAppThumb from "@/public/images/marvel-rivals-main-thumb.jpg";
 import marvelRivalsAppImg from "@/public/images/marvel-rivals-site.png";
 import modernStackImg from "@/public/images/modern-stack-solutions.png";
+import corpcommentImg from "@/public/images/navy-project-main.jpg";
 import portfolioImg from "@/public/images/portfolio-website.png";
 import reactMovieDatabaseAppImg from "@/public/images/react-movie-database.png";
 import rivalsPulseThumb from "@/public/images/rivals-pulse-thumb.jpg";
 import rivalsPulseImg from "@/public/images/rivals-pulse.png";
-
-
-import corpcommentImg from "@/public/images/navy-project-main.jpg";
 
 export const links = [
   {
@@ -194,7 +193,7 @@ export const skillsData = [
   "Azure SQL",
 ] as const;
 
-export const certificationsData = [
+export const certificationsData:JobCertification[] = [
    {
     title: "Angular Mastery Certification",
     description:

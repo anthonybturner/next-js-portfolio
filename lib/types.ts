@@ -2,7 +2,15 @@ import { links } from "./data";
 
 export type SectionName = (typeof links)[number]['name']
 export type useSectionInViewProps= {sectionName: SectionName;}
-
+export type JobCertification = {
+  readonly title: string;
+  readonly description: string;
+  readonly tags: readonly string[];
+  readonly imageUrl: any;
+  readonly thumbnailUrl: any;
+  readonly website: string;
+  readonly pdfUrl?: string; // Optional with '?'
+};
 /**
  * Type definition for the context value provided by ActiveSectionContextProvider.
  * Contains the current active section and a function to update it.
