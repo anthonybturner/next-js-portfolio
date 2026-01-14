@@ -7,8 +7,8 @@ export type JobCertification = {
   readonly title: string;
   readonly description: string;
   readonly tags: readonly string[];
-  readonly imageUrl: StaticImageData;
-  readonly thumbnailUrl: StaticImageData;
+  readonly imageUrl: StaticImageData | string;
+  readonly thumbnailUrl: StaticImageData | string;
   readonly website: string;
   readonly pdfUrl?: string; // Optional with '?'
 };

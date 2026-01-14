@@ -30,8 +30,9 @@ export default function Certification() {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false)
   const [selectedImageUrl, setSelectedImageUrl] = useState('')
 
-  const openLightbox = (imageUrl: string) => {
-    setSelectedImageUrl(imageUrl)
+  const openLightbox = (imageUrl: StaticImageData | string) => {
+    const url = typeof imageUrl === 'string' ? imageUrl : imageUrl.src
+    setSelectedImageUrl(url)
     setIsLightboxOpen(true)
   }
 
