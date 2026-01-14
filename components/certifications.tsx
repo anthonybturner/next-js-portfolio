@@ -2,7 +2,7 @@
 import { certificationsData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa'
 import ImageLightbox from './image-lightbox'
