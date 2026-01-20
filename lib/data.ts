@@ -147,7 +147,7 @@ export const projectsData = [
     imageUrl: marvelRivalsAppImg,
     thumbnailUrl: marvelRivalsAppThumb,
     github: "https://github.com/anthonybturner/marvelrivalsui",
-    website: "https://marvelrivalsstats.vercel.app",
+    website: "#WIP",
   },
   {
     title: "Rivals Pulse - Marvel Rivals Overwolf App (available soon on appstore)",
